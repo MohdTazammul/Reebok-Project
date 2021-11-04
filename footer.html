@@ -1,0 +1,292 @@
+<html>
+    
+<head>
+    <script src="https://kit.fontawesome.com/2b85c82466.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+        .footer-section-1 {
+            font-family: Arial;
+            background-color: #2F2F2B;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-section-1>div {
+            padding: 20px 30px;
+            font-size: .9em;
+            color: white;
+        }
+
+        .footer-section-1>div:nth-child(2) {
+            box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.5), -12px 0 8px -4px rgba(0, 0, 0, 0.5);
+        }
+
+        .footer-section-2 {
+            color: white;
+            font-family: Arial;
+            background-color: #343530;
+            height: auto;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            font-size: .9em;
+        }
+
+        footer ul {
+            list-style: none;
+            display: block;
+            float: left;
+            line-height: 25px;
+            margin-left: 40px;
+        }
+
+        footer h3 {
+            font-weight: 100;
+            margin-bottom: 0;
+        }
+        .tag
+        {
+            padding-top: 15px;
+            color: #828280;
+            font-size:18px;
+            font-weight: 600;
+        }
+        .footer-section-2 > ul:nth-child(1) {
+            margin-left: 0;
+        }
+        .footer-section-3 {
+            background-color: #40403a;
+            font-size: 28px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 30px 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }        
+        .footer-section-3 label span {
+            font-weight: bold;
+            color: #cc0526;
+        }
+        .footer-section-3 button {
+            background-color:#c71432;
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            border: none;
+            border-radius: 5px;
+        }
+        .footer-section-3 button:hover{
+            background-color: #f42043;
+            cursor: pointer;
+        }
+        .footer-section-4 {
+           display: flex;
+           justify-content: center;
+           padding: 30px;
+           background-color: #343530;
+        }
+        .footer-section-5 {
+            background-color: #343530;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 50px 0px 20px 0px;
+            color: #8d9495;
+            font-size: 13px;
+            letter-spacing: 1.5px;
+        }
+        .footer-section-5 img{
+            vertical-align: middle;
+        }
+        .mobile {
+            display: none;
+        }
+        @media screen and (min-width: 0px) and (max-width: 1100px) {
+            .main {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+            .mobile-section-1{
+                text-align: center;
+                padding: 30px;
+                font-weight: 500;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .Up {
+                font-size: 30px;                
+            }
+            .mobile-section-2 label span {
+            font-weight: bold;
+            color: #cc0526;
+           }
+           .mobile-section-2{
+               font-size: 25px;
+               font-family: Arial, Helvetica, sans-serif;
+               text-align: center;
+               font-weight: 600;
+               background-color: #1a1a16;
+               color: white;
+               padding: 20px;
+
+           }
+           .mobile-section-2 input {              
+               width: 90%; 
+               padding: 10px;  
+               margin-top: 20px ; 
+           }
+           .mobile-section-2 button {  
+               padding: 13px 20px; 
+               margin-left: -8px;
+               background-color: black;
+               color: white;
+               border: none;
+               font-size: 16px;              
+           }
+           .mobile-section-2 button:hover{
+               cursor: pointer;
+           }
+           #login {grid-area: c1;}
+           #bag {grid-area: c2;}         
+           #createAccount {grid-area: c3;}
+           #contactUs {grid-area: c4;}
+           #shipping {grid-area: c5;}
+           #desktop {grid-area: c6;}
+           #loginStore {grid-area: c7;}
+           #policy {grid-area: c8;}
+           #TNC {grid-area: c9;}
+           #copyright {grid-area: c10;}
+           .mobile-section-3 {
+               display: grid;
+               grid-template-areas: "c1 c2"
+               "c3 c4"
+               "c5 c5"
+               "c6 c7"
+               "c8 c9"
+               "c10 c10";
+               font-family: Arial, Helvetica, sans-serif;
+               text-align: center;                        
+           }
+           .mobile-section-3 > div{
+               padding: 12px;
+               background-color: #2f2f2b;
+               color: #fef9f2;
+               font-weight: 500;
+               line-height: 2.4;
+               font-size: 15px;
+               border-bottom: 1px solid #fef9f2;
+           }
+           #copyright{
+               font-size: 12px;
+           }
+           
+           #login div,#desktop div,#policy div {
+               width: 100%;
+               border-right:2px solid #fef9f2;
+           }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="footer-section-1">
+            <div>Free Shipping + Free 30-Day Returns *</div>
+            <div>Call Us Between 8AM To 8PM : 1-800-120-4400</div>
+            <div>Email Us: Customer.Care@Reebok.Com</div>
+        </div>
+        <footer class="footer-section-2">
+            <ul>
+                <li class="tag">MEN</li>
+                <li>Footwear</li>
+                <li>Clothing</li>
+                <li>Accessories</li>
+                <li class="tag">WOMEN</li>
+                <li>Footwear</li>
+                <li>Clothing</li>
+                <li>Accessories</li>
+                <li class="tag">KIDS</li>
+                <li>Footwear</li>
+                <li>Clothing</li>
+                <li>Accessories</li>
+            </ul>
+            <ul>
+                <li class="tag">FITNESS</li>
+                <li>Running</li>
+                <li>Training</li>
+                <li>Classics</li>
+                <li>walking</li>
+                <li>Mixed Material Arts</li>
+                <li>Swimming</li>
+            </ul>
+            <ul>
+                <li class="tag">QUICK SHOP</li>
+                <li>Running</li>
+                <li>Training</li>
+                <li>Classics</li>
+                <li>walking</li>
+                <li>Mixed Material Arts</li>
+                <li>SALE</li>
+                <li class="tag">NEW ARRIVALS</li>
+                <li>New Arrivals</li>
+            </ul>
+            <ul>
+                <li class="tag">CUSTOMER SERVICE</li>
+                <li>Contact Us</li>
+                <li>My Account</li>
+                <li>*Privacy Policy</li>
+                <li>*Terms And Conditions</li>
+            </ul>
+            <ul>
+                <li><img src="/img/Capture.JPG" width="80px" style="margin-top: 20px;" alt=""></li>
+            </ul>            
+        </footer>
+        <div class="footer-section-3">
+            <label for="">SIGN UP AND GET <span> 15% OFF. &nbsp; </span></label>
+            <button>Sign Up &nbsp; &nbsp; <i  class="fas fa-chevron-circle-right"></i>
+            </button>
+        </div>
+        <div class="footer-section-4">
+            <img src="https://content.shop4reebok.com/static/footer/Payment_Icon_A.jpg" alt="">
+        </div>
+        <div class="footer-section-5">
+            <label for="">©2021 SHOP4REEBOK.COM | POWERED BY : ADI SPORTS (INDIA) PVT. LTD.</label>
+            <img src="https://content.shop4reebok.com/static/footer/ADI_SPORTS_LOGO.jpg" alt="">
+        </div>
+    </div>
+    <div class="mobile">
+        <div class="mobile-section-1">
+            <i class="fas fa-angle-up Up"></i>
+            <label > BACK TO TOP</label>
+        </div>
+        <div class="mobile-section-2">
+            <label for="">SIGN UP AND GET <span> 15% OFF. &nbsp; </span></label>
+            <div>
+                <input type="text" placeholder="YOUR EMAIL ADDRESS">
+                <button><i class="fas fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-section-3">
+        <div id="login"><div><i class="fas fa-user"></i>&nbsp; &nbsp;Login</div></div> 
+        <div id="bag"><i class="fas fa-shopping-cart"></i>&nbsp; &nbsp;Your bag(0) </div>       
+        <div id="createAccount">Create Account</div>
+        <div id="contactUs" >Contact Us</div>
+        <div id="shipping" >Free Shipping + Free 30-Day Returns* <br>
+            The Official Reebok Store Call us between 8AM to 8PM 1-800-120-4400</div>
+        <div id="desktop"><div> View Desktop virsion</div></div>
+        <div id="loginStore" >Login to store</div>
+        <div id="policy"><div> Privacy Policy & Terms of </div></div>
+        <div id="TNC" >Terms & Conditions</div>
+        <div id="copyright" >©2021 m.shop4reebok.com <br>
+            Powered By : adi Sports (India) Pvt. Ltd.
+        </div>
+    </div>
+</div>
+</body></html>
