@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SIGN IN</title>
+    <script
+      src="https://kit.fontawesome.com/2b85c82466.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      href="https://img.buzzfeed.com/buzzfeed-static/static/2016-09/9/6/enhanced/buzzfeed-prod-fastlane02/enhanced-buzz-11328-1473418581-1.jpg"
+    />
+
+    <link
+      href="//db.onlinewebfonts.com/c/dd72e46b877acc620c475d5ac7578980?family=Neue+Plak"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <style>
+      @import url(//db.onlinewebfonts.com/c/dd72e46b877acc620c475d5ac7578980?family=Neue+Plak);
+      @font-face {
+        font-family: "Neue Plak";
+        src: url("//db.onlinewebfonts.com/t/dd72e46b877acc620c475d5ac7578980.eot");
+        src: url("//db.onlinewebfonts.com/t/dd72e46b877acc620c475d5ac7578980.eot?#iefix")
+            format("embedded-opentype"),
+          url("//db.onlinewebfonts.com/t/dd72e46b877acc620c475d5ac7578980.woff2")
+            format("woff2"),
+          url("//db.onlinewebfonts.com/t/dd72e46b877acc620c475d5ac7578980.woff")
+            format("woff"),
+          url("//db.onlinewebfonts.com/t/dd72e46b877acc620c475d5ac7578980.ttf")
+            format("truetype"),
+          url("//db.onlinewebfonts.com/t/dd72e46b877acc620c475d5ac7578980.svg#Neue Plak")
+            format("svg");
+      }
+      #bodyDiv {
+        /* border: 1px solid red; */
+        margin-top: 50px;
+      }
+      #container {
+        display: grid;
+
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        /* border: 1px solid red; */
+        font-family: "Neue Plak";
+      }
+      #heading {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Neue Plak";
+
+        padding-left: 20px;
+        padding-bottom: 20px;
+        line-height: 0%;
+        margin: 0;
+      }
+
+      body {
+        width: 80%;
+        margin: auto;
+      }
+
+      #signInBtn,#guestBtn,
+      #registrationBtn {
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        font-weight: 700;
+        color: white;
+        background-color: #c71432;
+        padding: 1em;
+        padding-right: 4.5em;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+      }
+      #facebook > a > img {
+        width: 50px;
+        height: 50px;
+
+        cursor: pointer;
+      }
+      /* #signInDiv {
+      /* border: 1px solid red; */
+      /* display: none; */
+      
+     
+      } */
+
+      #divForGuestUse{
+        /* border: 1px solid blue; */
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+        padding: 0px 20px;
+      }
+     
+
+      #registration {
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+        padding: 0px 20px;
+
+        border-right: 1px solid rgba(221, 214, 214, 0.835);
+        border-left: 1px solid rgb(221, 214, 214, 0.835);
+      }
+
+      #socialNetwork {
+        display: inline-block;
+        padding: 0px 20px;
+      }
+      .mainDiv {
+        font-size: 13px;
+      }
+
+      .input {
+        font-size: 11px;
+        height: 25px;
+        width: 85%;
+        border: 1px solid rgb(41, 39, 39);
+        padding-left: 10px;
+      }
+      hr {
+        border-top: 0.2px solid rgba(248, 245, 245, 0.952);
+      }
+      #checkbox {
+        height: 13px;
+        width: 13px;
+      }
+      #forgot {
+        color: rgb(32, 31, 31);
+      }
+      h4 {
+        line-height: 0;
+      }
+      @media screen and (max-width: 990px) and (min-width: 0px) {
+        #container {
+          display: grid;
+          grid-template-columns: auto;
+          border: 1px solid red;
+          font-family: "Neue Plak";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bodyDiv">
+      <p id="heading">SIGN IN</p>
+
+      <div class="mainDiv" id="container">
+        <!-- 1st column sign in div  -->
+        <div id="divForGuestUse">
+          
+        
+        <div id="signInDiv">
+          <form action="">
+            <h4>REGISTERED MEMBERS</h4>
+            <p>
+              If you've created an account with us, please enter your email
+              address and password.
+            </p>
+            <input
+              class="input"
+              id="signEmail"
+              type="email"
+              placeholder="Enter your Email"
+            />
+            <br /><br />
+            <br />
+            <input
+              class="input"
+              id="signPassword"
+              type="password"
+              placeholder="Enter your password"
+            />
+            <br /><br />
+            <!-- SIGN IN BUTTON  -->
+            <button id="signInBtn" id="signIn">
+              Sign In <span> </span> <i class="fas fa-chevron-circle-right"></i>
+            </button>
+            <br /><br />
+            <hr />
+            <br />
+            <a id="forgot" href="" style="text-decoration: none"
+              >Forgot your password</a
+            >
+            <br /><br />
+            <input id="checkbox" type="checkbox" />
+            <label>Continue as a Guest User</label>
+          </form>
+        </div>
+      </div>
+
+        <!-- 2nd column New Customer Registration  div  -->
+
+        <div id="registration">
+          <form action="">
+            <h4>NEW CUSTOMERS</h4>
+
+            <p>
+              If you don't have an account with us, or are just unsure then
+              enter your information below.
+            </p>
+
+            <input
+              class="input"
+              id="fName"
+              type="text"
+              placeholder="Firts Name"
+            />
+            <br />
+            <br />
+            <input
+              class="input"
+              id="lName"
+              type="text"
+              placeholder="Last Name"
+            />
+            <br />
+            <br />
+            <input class="input" id="email" type="email" placeholder="Email" />
+            <br />
+            <br />
+            <input
+              class="input"
+              id="password"
+              type="password"
+              placeholder="Password"
+            />
+            <br /><br />
+            <input
+              class="input"
+              id="rePassword"
+              type="password"
+              placeholder="Re-type Password"
+            />
+
+            <p>
+              Password should have at least a minimum of one letter, one number
+              and is at least 8 characters long
+            </p>
+
+            <input id="gender1" type="radio" name="gender" value="Male" /><label
+              for="gender1"
+              >Male</label
+            >
+            <input
+              id="gender2"
+              type="radio"
+              name="gender"
+              value="Female"
+            /><label for="gender2">Female</label> <br /><br />
+            <!-- REGISTRATION BUTTON -->
+            <button id="registrationBtn">
+              Sign In <span> </span> <i class="fas fa-chevron-circle-right"></i>
+            </button>
+            <br />
+          </form>
+        </div>
+
+        <!-- 3rd  column Social Connevtivity Registration  div  -->
+
+        <div id="socialNetwork">
+          <h4>USE YOUR SOCIAL NETWORK</h4>
+
+          <p>Sign in using your existing Facebook information</p>
+
+          <div class="facebook" id="facebook">
+            <a href="https://www.facebook.com/login/">
+              <img src="https://www.facebook.com/images/fb_icon_325x325.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var userList = JSON.parse(localStorage.getItem("userlist")) || [];
+  //  console.log(userList)
+  document
+    .getElementById("registrationBtn")
+    .addEventListener("click", registrationFn);
+
+  function registrationFn(event) {
+    event.preventDefault();
+    var fName = document.getElementById("fName").value;
+    var lName = document.getElementById("lName").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var rePassword = document.getElementById("rePassword").value;
+    var gender1 = document.getElementById("gender1");
+    var gender2 = document.getElementById("gender2");
+
+    if (gender1.checked == true) {
+      var gender = gender1.value;
+    } else if (gender2.checked == true) {
+      gender = gender2.value;
+    }
+
+    if (
+      !fName.length ||
+      !lName.length ||
+      !email.length ||
+      !password.length ||
+      !rePassword.length ||
+      gender == undefined
+    ) {
+      alert("Please fill Complete details");
+    }
+     else if (password == rePassword) {
+      // Object for user details to store in array
+      var userDetails = {
+        userfName: fName,
+        userlName: lName,
+        useremail: email,
+        userpassword: password,
+        usergender: gender,
+      };
+      // USER VALIDATION ALREADY REGISTERED OR NOT
+        if(userList.length>0){
+            for (var j = 0; j < userList.length; j++) {
+            if (userList[j].useremail == userDetails.useremail) {
+              // presence=true;
+              alert("Already Register Please signin or Use Different Email");
+            } else {
+              userList.push(userDetails);
+              localStorage.setItem("userlist", JSON.stringify(userList));
+              window.location.href = "product.html";
+            }
+          }
+       }else{
+        userList.push(userDetails);
+              localStorage.setItem("userlist", JSON.stringify(userList));
+              window.location.href = "product.html";
+       }
+
+      
+    } 
+    else {
+      alert("password Not Matched");
+    }
+  }
+
+  // SIGN IN FUNCTION WORKING functionality
+  document.getElementById("signInBtn").addEventListener("click", signInFn);
+
+  // data stored in localStorage  array  - "userList"
+
+  function signInFn(e) {
+    e.preventDefault();
+
+    // DATA FROM INPUT SIGN IN EMAIL PASSWORD
+    var sEmail = document.getElementById("signEmail").value;
+
+    var sPassword = document.getElementById("signPassword").value;
+
+    // IN IF CONDITION ADMIN LOGIN AND IN ELSE CUSTOMER LOGIN
+    if (sEmail == "admin" && sPassword == "admin") {
+      window.location.href = "admin.html";
+    } else {
+      for (var i = 0; i < userList.length; i++) {
+        if (
+          userList[i].useremail == sEmail &&
+          userList[i].userpassword == sPassword
+        ) {
+          alert("Login Successfully");
+          // we have to set product page here for customer view
+          window.location.href = "product.html";
+        }else if(userList[i].useremail == sEmail){
+          alert("Incorrect Password");
+        }else{
+          alert("Please Enter valid email address");
+        }
+      }
+    }
+  }
+
+  // FUNCTION FOR GUEST LOGIN CHECKBOX
+document.getElementById("checkbox").addEventListener("change" ,checkboxFn)
+function checkboxFn(){
+
+var form=document.createElement("form");
+
+var h4=document.createElement("h4");
+h4.textContent="PLEASE ENTER YOUR EMAIL ID";
+
+var input=document.createElement("input");
+input.setAttribute("placeholder","Email");
+input.setAttribute("class","input");
+input.style.marginBottom="40px"
+
+var br1=document.createElement("br");
+var br2=document.createElement("br");
+var br=document.createElement("br")
+var btn=document.createElement("button");
+btn.textContent="Continue As Guest";
+btn.setAttribute("id","signInBtn")
+
+var signDiv=document.getElementById("signInDiv").style.display="none";
+form.append(h4,br1,input,br,btn);
+var divForGuestUse=document.getElementById("divForGuestUse");
+divForGuestUse.append(form);
+}
+
+</script>
+
+
