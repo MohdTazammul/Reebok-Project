@@ -4827,6 +4827,10 @@
       technology: "dmx",
     },
   ];
+    for(var i =0; i<data.length;i++)
+        {
+            data[i]["id"] = "RB0"+(2335+(i*2));
+        }
   console.log(data);
     localStorage.setItem("ReebokProductsList", JSON.stringify(data));
 </script>
