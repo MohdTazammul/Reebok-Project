@@ -576,7 +576,7 @@
             EXTRA <b>10% OFF</b> ON PREPAID ORDERS MINIMUM CART VALUE – INR 1000.
         </div>
         <div class="title">
-            <label> MEN'S RUNNING SHOES </label><label> / <label id="totalProducts">100</label> Products</label>
+            <label> MEN'S RUNNING SHOES </label><label> / <label id="totalProducts"></label> Products</label>
         </div>
         <div class="main-section">
             <div class="left-filters">
@@ -609,7 +609,7 @@
                         <button class="filter-container-main">GENDER
 
                             <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/caretsymbol_120671.png" height="15px" width="15px">
+                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
                             </div>
                         </button>
                         <div class="content">
@@ -635,7 +635,7 @@
                         <button class="filter-container-main">CATEGORY
 
                             <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/caretsymbol_120671.png" height="15px" width="15px">
+                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
                             </div>
                         </button>
                         <div class="content">
@@ -661,7 +661,7 @@
                         <button class="filter-container-main">PRODUCT TYPE
 
                             <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/caretsymbol_120671.png" height="15px" width="15px">
+                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
                             </div>
                         </button>
                         <div class="content">
@@ -685,7 +685,7 @@
                         <button class="filter-container-main">SIZE
 
                             <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/caretsymbol_120671.png" height="15px" width="15px">
+                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
                             </div>
                         </button>
                         <div class="content size-filter">
@@ -706,7 +706,7 @@
                         <button class="filter-container-main">COLOUR
 
                             <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/caretsymbol_120671.png" height="15px" width="15px">
+                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
                             </div>
                         </button>
                         <div class="content color-filter">
@@ -729,7 +729,7 @@
                         <button class="filter-container-main">BRANDS
 
                             <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/caretsymbol_120671.png" height="15px" width="15px">
+                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
                             </div>
                         </button>
                         <div class="content">
@@ -754,7 +754,7 @@
                         <button class="filter-container-main">COLLECTION
 
                             <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/caretsymbol_120671.png" height="15px" width="15px">
+                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
                             </div>
                         </button>
                         <div class="content">
@@ -795,7 +795,7 @@
                         <button class="filter-container-main">SPORTS
 
                             <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/caretsymbol_120671.png" height="15px" width="15px">
+                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
                             </div>
                         </button>
                         <div class="content">
@@ -817,7 +817,7 @@
                         <button class="filter-container-main">TECHNOLOGY
 
                             <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/caretsymbol_120671.png" height="15px" width="15px">
+                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
                             </div>
                         </button>
                         <div class="content">
@@ -848,7 +848,7 @@
                         <button class="filter-container-main">DISCOUNT
 
                             <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/caretsymbol_120671.png" height="15px" width="15px">
+                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
                             </div>
                         </button>
                         <div class="content">
@@ -906,7 +906,7 @@
                         </select>
                     </div>
                     <div class="view">
-                        <label>VIEW : </label><button class="bold">60</button><button>120</button><button>240</button><button>580</button>
+                        <label>VIEW : </label><button class="bold">20</button><button>60</button><button>120</button><button>200</button>
                     </div>
                     <div>
                         <select id="page">
@@ -1041,13 +1041,18 @@
     // show products function
     function showProducts(em)
     {    
-
+        var ln = em.length;
+        
+        document.getElementById("totalProducts").textContent = em.length;
         document.querySelector(".products-container").textContent="";
 //        console.log("this is data "+productsData);
         em.map(function (item)
             { 
                 var cardDiv = document.createElement("div");
                 cardDiv.setAttribute("class","card1");
+               
+                cardDiv.addEventListener("click", redirectToIndividualPage);
+//            cardDiv.setAttribute("onclick","redirectToIndividualPage()")
             
                 var subDiv1 = document.createElement("div");
                 
@@ -1106,7 +1111,8 @@
 
                 var label3 = document.createElement("label");
             label3.setAttribute("id", "effective-price");
-            label3.innerHTML = "&#8377;"+item.price;
+            
+            label3.innerHTML = "&#8377;"+Math.floor(item.price-(item.price*item.discount/100));
             
                 var label4 = document.createElement("label");
             label4.setAttribute("id", "orignal-price");
@@ -1155,7 +1161,7 @@
     {
         console.log(e.target.parentElement.lastChild.textContent);
         var cardProductid = e.target.parentElement.lastChild.textContent;
-        // Now chechk whether the product already exsist in cart or not
+        // Now check whether the product already exsist in cart or not
         
         var flag = false;
         
@@ -1208,7 +1214,7 @@
                     var sorted = data;
                     sorted.sort(function (a,b)
                      {
-                        return a.price - b.price; 
+                        return Math.floor(a.price-(a.price*a.discount/100)) - Math.floor(b.price-(b.price*b.discount/100)); 
                     });
                     showProducts(sorted);
                 }
@@ -1217,7 +1223,7 @@
                     var sorted = data;
                     sorted.sort(function (a,b)
                      {
-                        return b.price - a.price; 
+                        return Math.floor(b.price-(b.price*b.discount/100)) - Math.floor(a.price-(a.price*a.discount/100));
                     });
                     showProducts(sorted);
                 }
@@ -1236,7 +1242,6 @@
         if(document.getElementById("men-filter").checked)
            {
                 alert("Men");
-               
            }
         else
             alert("Men Unchecked");
@@ -1264,8 +1269,8 @@
             var content = this.nextElementSibling;
             var img = this.firstElementChild.firstElementChild;
 //      content.style.maxHeight= 0;
-            if (content.style.maxHeight){
-                content.style.maxHeight = null;
+            if (content.style.maxHeight != "0px"){
+                content.style.maxHeight = "0px";
                 img.src = "https://cdn.icon-icons.com/icons2/1883/PNG/512/caretsymbol_120671.png";
             } 
             else
@@ -1275,7 +1280,20 @@
             } 
         }); 
     }
-// Collapsible section of left filters    
+// Collapsible section of left filters   
+    
+    
+    
+    function redirectToIndividualPage(e)
+    {
+//        alert("clicked");
+//        console.log(e.target.parentElement.lastChild.textContent);
+        console.log(this.lastChild.lastChild.textContent);
+        var individualProductId = this.lastChild.lastChild.textContent;
+        
+        window.location.href = "indiProduct.html?"+individualProductId;
+        
+    }
     
 </script>
     
