@@ -7,20 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2b85c82466.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Mochiy+Pop+One&family=Roboto:ital,wght@1,500&family=Rubik&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Mochiy+Pop+One&family=Red+Hat+Mono:wght@300&family=Roboto:ital,wght@1,500&family=Rubik&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/header.css" />
-    <link rel="stylesheet" href="CSS/Footer.css" />
-    <link rel="stylesheet" href="CSS/Product.css" />
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/Footer.css">
+    <link rel="stylesheet" href="CSS/delivery.css">
 </head>
 
 <body>
-    <!-- ENTIRE LANDING PAGE DIV   -->
+<!-- ENTIRE LANDING PAGE DIV   -->
 
-    <!--    NAV BAR WITH HAMBURGER MENU-->
+    
+<!--    NAV BAR WITH HAMBURGER MENU-->
+
 
     <div class="PC-navbar">
       <div id="nav-adidas">
@@ -40,7 +37,7 @@
       </div>
       <div id="nav-2">
           <ul>                
-              <li class="reebok-logo"><img id="redirectToIndex" src="https://content.shop4reebok.com/static/header/vector_logo_white_145x19_website.png"></li>
+              <li class="reebok-logo"><img src="https://content.shop4reebok.com/static/header/vector_logo_white_145x19_website.png"></li>
               <li class="dropdown">
                   <a href="" class="dropbtn nav-link nav-link-ltr">MEN <i class="icon fas fa-angle-up"></i>
                   </a>
@@ -56,7 +53,7 @@
                               </tr>
                               <tr>
                                   <td><a class="red" href="">Face Covers</a> </td>
-                                  <td><a href="Product.html">Running</a> </td>
+                                  <td><a href="index.html">Running</a> </td>
                                   <td><a href="">T-Shirts</a> </td>
                                   <td><a class="red" href="">Face Covers</a> </td>
                                   <td><a href="">Pyer Moss</a> </td>
@@ -477,477 +474,213 @@
 
   </div>
 
+<!--    (closed) NAV BAR WITH HUMBERGER MENU -->
+
+<div id="checkoutMainDiv">
+
+
+
+  <div id="checkoutHeading">
+      <div  class="checkoutHead_inactive"> <span >1</span> Bag</div>
+      <div class="checkoutHead_active"> <span>2</span> Delivery</div>
+      <div class="checkoutHead_inactive"> <span>3</span> Payment</div>
+  </div>
+
+
+  <div id="shopingCartDiv">
+
+      <div id="orderSummeryLeft">
+          <h3 class="shopingCartHeading"  id="shopingCartHeading">BILLING ADDRESS</h3>
+            <p class="itemText" id="itemDetails" >All Fields Are Required Unless Otherwise Noted.</p>
+            <P id="countryText">Country-India</P>
+          <input class="input1" id="fName" type="text" placeholder="*First Name">
+          <input class="input1" id="lName" type="text" placeholder="Last Name">
+          <br>
+          <input class="input2" id="street" type="text" placeholder="*Street, Address, City">
+          <br>  
+          <input class="input1" id="landmark" type="text" placeholder="*Landmark">
+          <select id="state"  class="input1" >
+              <option value="">--*Select State--</option>
+              <option value="AndamanAndNicobar">Andaman And Nicobar</option>
+              <option value="AndhraPradesh">Andhra Pradesh</option>
+              <option value="ArunachalPradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chandigarh">Chnadigarh</option>
+              <option value="Chhattishgarh">Chhattishgarh</option>
+              <option value="DamanAndDiu">Daman And Diu</option>
+              <option value="Delhi">Delhi</option>
+              <option value="DadarAndNagarHaveli">Dadar And Nagar Haveli</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="HimachalPradesh">Himachal Pradesh</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="JammuAndKashmir">Jammu And Kashmir</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Lakshadweep">Lakshadweep</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="MadhyaPradesh">Madhya Pradesh</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Puducherry">Puducherry</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Telangana">Telangana</option>
+              <option value="TamilNadu">Tamil Nadu</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttrakhand">Uttrakhand</option>
+              <option value="UttarPradesh">Uttar Pradesh</option>
+              <option value="WestBengal">West Bengal</option>
+             
+          </select>
+          <br>
+
+          <input class="input2" id="pincode" type="text" placeholder="*Enter Pincode">
+          <input class="input2" id="mobile" type="tel" placeholder="*9999999999">
+          <p class="itemText" >*Mandatory fields</p>
+          <br/>  
+          <hr id="deliveryHr">
+          <input type="checkbox"><label id="deliveryCheckbox" class="itemText">Save this Address and Phone Number to my Profile.</label>
+          <br/>
+        <button id="continueCheckoutBtn">continue checkout</button>
+
+          
+
+
+<div>
     
-    <!-- Product Page Section   -->
-
-    <div class="Product-Page">
-        <div class="tag">
-            EXTRA <b>10% OFF</b> ON PREPAID ORDERS MINIMUM CART VALUE – INR 1000.
-        </div>
-        <div class="title">
-            <label> MEN'S RUNNING SHOES </label><label> / <label id="totalProducts"></label> Products</label>
-        </div>
-        <div class="main-section">
-    <div class="left-filters">
-                <div class="selection">
-                    <div>
-                        <div>
-                            <label>Your Selection</label>
-                        </div>
-                        <div>
-                            <button> <i class="fa fa-times-circle" aria-hidden="true"></i> <label>Clear All</label></button>
-                        </div>
-                    </div>
-
-                    <!--                    Selection applied filters (DOM part) -->
-                    <div>
-                        <button onclick="msg()"> <i class="fa fa-times-circle" aria-hidden="true"></i> <label id="filter-type">gender : </label><label id="filter-value">men</label></button>
-                    </div>
-                    <div>
-                        <button> <i class="fa fa-times-circle" aria-hidden="true"></i> <label id="filter-type" class="text-height">sports : </label><label id="filter-value">running</label></button>
-                    </div>
-                    <div>
-                        <button> <i class="fa fa-times-circle" aria-hidden="true"></i> <label id="filter-type">category : </label><label id="filter-value">footwear</label></button>
-                    </div>
-                    <!--                    Selection applied filters (DOM part) -->
+</div>
+      </div>
+      <div id="orderSummeryRight">
+          <label>Order Summery <lable id="totalItem">(5 Items)</lable></label>
+         <div id="cards-cont">
+          </div>
+          <div class="order-summary">
+                <div>Merchandise Subtotal(Incl Item Discounts)</div>
+                <div class="amt" id="total-price"></div>
+                <div>Order Discounts</div>
+                <div style="padding-top: 0px;" class="amt">-&#8377;0.00</div>
+                 <div class="total">Total</div>
+                <div class="total-amt"><label  id="total-price"></label>
                 </div>
-                <div class="filter-container vertical-text-height">
-                    <!--                    1st filter  -->
-
-
-                    <div class="filter-sub-container">
-
-                        <button class="filter-container-main">GENDER
-
-                            <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
-                            </div>
-                        </button>
-                        <div class="content">
-                            <div>
-                                <input  id="men-filter" type="checkbox" value="men" />
-                                <label>Men</label>
-                                <label id="gender-men-total-products">434</label>
-                            </div>
-
-                            <div>
-                                <input   id="women-filter" type="checkbox" value="women" />
-                                <label>Women</label>
-                                <label id="gender-women-total-products">(113)</label>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <!--                    2nd filter-->
-
-                    <div class="filter-sub-container">
-
-                        <button class="filter-container-main">CATEGORY
-
-                            <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
-                            </div>
-                        </button>
-                        <div class="content">
-                            <div>
-                                <input  id="footwear-Filter" type="checkbox" value="footwear" />
-                                <label>Footwear</label>
-                                <label id="gender-men-total-products">(120)</label>
-                            </div>
-
-                            <div>
-                                <input  id="clothing-Filter" type="checkbox" value="clothing" />
-                                <label>Clothing</label>
-                                <label id="gender-women-total-products">(220)</label>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <!--         3rd filter-->
-
-                    <div class="filter-sub-container">
-
-                        <button class="filter-container-main">PRODUCT TYPE
-
-                            <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
-                            </div>
-                        </button>
-                        <div class="content">
-                            <div>
-                                <input id="shoes-Filter" onclick="shoesFilter()" type="checkbox" value="" />
-                                <label>Shoes</label>
-                                <label id="gender-men-total-products">(120)</label>
-                            </div>
-                            <div>
-                                <input id="sandals/slippers-Filter" onclick="sandalsSlippersFilter()" type="checkbox" value="" />
-                                <label>Sandals/Slippers</label>
-                                <label id="gender-women-total-products">(220)</label>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!--         4th filter-->
-
-                    <div class="filter-sub-container">
-
-                        <button class="filter-container-main">SIZE
-
-                            <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
-                            </div>
-                        </button>
-
-                        <div class="content size-filter">
-                            <button onclick="size1Filter()" id="size1">5</button>
-                            <button onclick="size2Filter()" id="size2">6</button>
-                            <button onclick="size3Filter()" id="size3">7</button>
-                            <button onclick="size4Filter()" id="size4">8</button>
-                            <button onclick="size5Filter()" id="size5">9</button>
-                            <button onclick="size6Filter()" id="size6">10</button>
-                            <button onclick="size7Filter()" id="size7">11</button>
-                        </div>
-
-                    </div>
-
-                    <!--                    5th Filter  -->
-                    <div class="filter-sub-container">
-
-                        <button class="filter-container-main">COLOUR
-
-                            <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
-                            </div>
-                        </button>
-                        <div class="content color-filter">
-                            <button onclick="color1Filter()" id="color1"></button>
-                            <button id="color2"></button>
-                            <button id="color3"></button>
-                            <button id="color4"></button>
-                            <button id="color5"></button>
-                            <button id="color6"></button>
-                            <button id="color7"></button>
-                        </div>
-
-                    </div>
-
-
-                    <!--         6rd filter-->
-
-                    <div class="filter-sub-container">
-
-                        <button class="filter-container-main">BRANDS
-
-                            <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
-                            </div>
-                        </button>
-                        <div class="content">
-                            <div>
-                                <input type="checkbox" value="men" />
-                                <label>Classics</label>
-                                <label id="gender-men-total-products">(120)</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" value="women" />
-                                <label>Sport</label>
-                                <label id="gender-women-total-products">(220)</label>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!--         7th filter-->
-
-                    <div class="filter-sub-container">
-
-                        <button class="filter-container-main">COLLECTION
-
-                            <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
-                            </div>
-                        </button>
-                        <div class="content">
-                            <div>
-                                <input type="checkbox" value="men" />
-                                <label>Best of Reebok</label>
-                                <label id="gender-men-total-products">(120)</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" value="women" />
-                                <label>Classic Nylon</label>
-                                <label id="gender-women-total-products">(220)</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" value="women" />
-                                <label>Early Access</label>
-                                <label id="gender-women-total-products">(220)</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" value="women" />
-                                <label>Golden Hours</label>
-                                <label id="gender-women-total-products">(220)</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" value="women" />
-                                <label>Special Deal</label>
-                                <label id="gender-women-total-products">(220)</label>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <!--         8th filter-->
-
-                    <div class="filter-sub-container">
-
-                        <button class="filter-container-main">SPORTS
-
-                            <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
-                            </div>
-                        </button>
-                        <div class="content">
-                            <div>
-                                <input type="checkbox" value="men" />
-                                <label>Running</label>
-                                <label id="gender-men-total-products">(120)</label>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-                    <!--         9th filter-->
-
-                    <div class="filter-sub-container">
-
-                        <button class="filter-container-main">TECHNOLOGY
-
-                            <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
-                            </div>
-                        </button>
-                        <div class="content">
-                            <div>
-                                <input type="checkbox" value="men" />
-                                <label>Astrofoam</label>
-                                <label id="gender-men-total-products">(120)</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" value="women" />
-                                <label>DMX</label>
-                                <label id="gender-women-total-products">(220)</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" value="women" />
-                                <label>Floatride</label>
-                                <label id="gender-women-total-products">(220)</label>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <!--         11th filter-->
-
-                    <div class="filter-sub-container">
-
-                        <button class="filter-container-main">DISCOUNT
-
-                            <div class="arrow">
-                                <img id="filter-arrow" src="https://cdn.icon-icons.com/icons2/1883/PNG/512/downarrow_120663.png" height="15px" width="15px">
-                            </div>
-                        </button>
-                        <div class="content">
-                            <div>
-                                <input type="checkbox" value="men" />
-                                <label>No Discount</label>
-                                <label id="gender-men-total-products">(120)</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" value="women" />
-                                <label>1 - 20%</label>
-                                <label id="gender-women-total-products">(220)</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" value="women" />
-                                <label>21 - 40%</label>
-                                <label id="gender-women-total-products">(220)</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" value="women" />
-                                <label>41 - 60%</label>
-                                <label id="gender-women-total-products">(220)</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" value="women" />
-                                <label>61 - 80%</label>
-                                <label id="gender-women-total-products">(220)</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" value="women" />
-                                <label>81 - 100%</label>
-                                <label id="gender-women-total-products">(220)</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" value="women" />
-                                <label>All Discount</label>
-                                <label id="gender-women-total-products">(220)</label>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                </div>
+                <div id="incl">(Inclusive of all taxes)</div>
             </div>
-            <div class="right-products">
-                <div class="Products-bar">
-                    <div>
-                        <select id="sortByValue" onchange="sortBy()">
-                            <option value="default">Sort By</option>
-                            <option value="low">Price Low to High</option>
-                            <option value="high">Price HIgh to Low</option>
-                            <option value="popular">Most Popular</option>
-                            <option value="newest">Newest Arrivals</option>
-                        </select>
-                    </div>
-                    <div class="view">
-                        <label>VIEW : </label><button class="bold">20</button><button>60</button><button>120</button><button>200</button>
-                    </div>
-                    <div>
-                        <select id="page">
-                            <option>1</option>
-                        </select> of 1
-                    </div>
-                </div>
-                <div class="products-container">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
+      </div>
+      
+  </div>
+</div>
 
-    <!--  Product Page Section  -->
-    <!--    Footer -->
-    <div class="original-footer">
-        <!--        PC FOOTER    -->
-        <div class="main">
-            <div class="footer-section-1">
-                <div>Free Shipping + Free 30-Day Returns *</div>
-                <div>Call Us Between 8AM To 8PM : 1-800-120-4400</div>
-                <div>Email Us: Customer.Care@Reebok.Com</div>
-            </div>
-            <footer class="footer-section-2">
-                <ul>
-                    <li class="tag">MEN</li>
-                    <li>Footwear</li>
-                    <li>Clothing</li>
-                    <li>Accessories</li>
-                    <li class="tag">WOMEN</li>
-                    <li>Footwear</li>
-                    <li>Clothing</li>
-                    <li>Accessories</li>
-                    <li class="tag">KIDS</li>
-                    <li>Footwear</li>
-                    <li>Clothing</li>
-                    <li>Accessories</li>
-                </ul>
-                <ul>
-                    <li class="tag">FITNESS</li>
-                    <li>Running</li>
-                    <li>Training</li>
-                    <li>Classics</li>
-                    <li>walking</li>
-                    <li>Mixed Material Arts</li>
-                    <li>Swimming</li>
-                </ul>
-                <ul>
-                    <li class="tag">QUICK SHOP</li>
-                    <li>Running</li>
-                    <li>Training</li>
-                    <li>Classics</li>
-                    <li>walking</li>
-                    <li>Mixed Material Arts</li>
-                    <li>SALE</li>
-                    <li class="tag">NEW ARRIVALS</li>
-                    <li>New Arrivals</li>
-                </ul>
-                <ul>
-                    <li class="tag">CUSTOMER SERVICE</li>
-                    <li>Contact Us</li>
-                    <li>My Account</li>
-                    <li>*Privacy Policy</li>
-                    <li>*Terms And Conditions</li>
-                </ul>
-                <ul>
-                    <li><img src="img/Capture.JPG" width="90px" style="margin-top: 18px;" /></li>
-                    <!--                <li><img src="/img/Capture.JPG" width="80px" style="margin-top: 20px;" alt=""></li>-->
-                </ul>
-            </footer>
-            <div class="footer-section-3">
-                <label for="">SIGN UP AND GET <span> 15% OFF. &nbsp; </span></label>
-                <button>Sign Up &nbsp; &nbsp; <i class="fas fa-chevron-circle-right"></i>
-                </button>
-            </div>
-            <div class="footer-section-4">
-                <img src="https://content.shop4reebok.com/static/footer/Payment_Icon_A.jpg" alt="">
-            </div>
-            <div class="footer-section-5">
-                <label for="">©2021 SHOP4REEBOK.COM | POWERED BY : ADI SPORTS (INDIA) PVT. LTD.</label>
-                <img src="https://content.shop4reebok.com/static/footer/ADI_SPORTS_LOGO.jpg" alt="">
-            </div>
-        </div>
-        <!--    MOBILE FOOTER    -->
-        <div class="mobile">
-            <div class="mobile-section-1">
-                <i class="fas fa-angle-up Up"></i>
-                <label> BACK TO TOP</label>
-            </div>
-            <div class="mobile-section-2">
-                <label for="">SIGN UP AND GET <span> 15% OFF. &nbsp; </span></label>
-                <div id="newsletter">
-                    <div><input placeholder="YOUR EMAIL ADDRESS">
-                    </div>
-                    <div><button> > </button></div>
-                </div>
-            </div>
-            <div class="mobile-section-3">
-                <div id="login">
-                    <div><i class="fas fa-user"></i>&nbsp; &nbsp;Login</div>
-                </div>
-                <div id="bag"><i class="fas fa-shopping-cart"></i>&nbsp; &nbsp;Your bag(0) </div>
-                <div id="createAccount">Create Account</div>
-                <div id="contactUs">Contact Us</div>
-                <div id="shipping">Free Shipping + Free 30-Day Returns* <br>
-                    The Official Reebok Store Call us between 8AM to 8PM 1-800-120-4400</div>
-                <div id="desktop">
-                    <div> View Desktop virsion</div>
-                </div>
-                <div id="loginStore">Login to store</div>
-                <div id="policy">
-                    <div> Privacy Policy &amp; Terms of </div>
-                </div>
-                <div id="TNC">Terms &amp; Conditions</div>
-                <div id="copyright">©2021 m.shop4reebok.com <br>
-                    Powered By : adi Sports (India) Pvt. Ltd.
-                </div>
-            </div>
-        </div>
-    </div>
 
-</body></html>
 
-<script>
+<!------------------ ENTIRE  FOOTER DIV  ---------------- -->
+<div class="original-footer">
+   <!--        PC FOOTER    -->
+             <div class="main">
+           <div class="footer-section-1">
+               <div>Free Shipping + Free 30-Day Returns *</div>
+               <div>Call Us Between 8AM To 8PM : 1-800-120-4400</div>
+               <div>Email Us: Customer.Care@Reebok.Com</div>
+           </div>
+           <footer class="footer-section-2">
+               <ul>
+                   <li class="tag">MEN</li>
+                   <li>Footwear</li>
+                   <li>Clothing</li>
+                   <li>Accessories</li>
+                   <li class="tag">WOMEN</li>
+                   <li>Footwear</li>
+                   <li>Clothing</li>
+                   <li>Accessories</li>
+                   <li class="tag">KIDS</li>
+                   <li>Footwear</li>
+                   <li>Clothing</li>
+                   <li>Accessories</li>
+               </ul>
+               <ul>
+                   <li class="tag">FITNESS</li>
+                   <li>Running</li>
+                   <li>Training</li>
+                   <li>Classics</li>
+                   <li>walking</li>
+                   <li>Mixed Material Arts</li>
+                   <li>Swimming</li>
+               </ul>
+               <ul>
+                   <li class="tag">QUICK SHOP</li>
+                   <li>Running</li>
+                   <li>Training</li>
+                   <li>Classics</li>
+                   <li>walking</li>
+                   <li>Mixed Material Arts</li>
+                   <li>SALE</li>
+                   <li class="tag">NEW ARRIVALS</li>
+                   <li>New Arrivals</li>
+               </ul>
+               <ul>
+                   <li class="tag">CUSTOMER SERVICE</li>
+                   <li>Contact Us</li>
+                   <li>My Account</li>
+                   <li>*Privacy Policy</li>
+                   <li>*Terms And Conditions</li>
+               </ul>
+               <ul>
+                   <li><img src="img/Capture.JPG" width="90px" style="margin-top: 18px;"/></li>
+   <!--                <li><img src="/img/Capture.JPG" width="80px" style="margin-top: 20px;" alt=""></li>-->
+               </ul>            
+           </footer>
+           <div class="footer-section-3">
+               <label for="">SIGN UP AND GET <span> 15% OFF. &nbsp; </span></label>
+               <button>Sign Up &nbsp; &nbsp; <i  class="fas fa-chevron-circle-right"></i>
+               </button>
+           </div>
+           <div class="footer-section-4">
+               <img src="https://content.shop4reebok.com/static/footer/Payment_Icon_A.jpg" alt="">
+           </div>
+           <div class="footer-section-5">
+               <label for="">©2021 SHOP4REEBOK.COM | POWERED BY : ADI SPORTS (INDIA) PVT. LTD.</label>
+               <img src="https://content.shop4reebok.com/static/footer/ADI_SPORTS_LOGO.jpg" alt="">
+           </div>
+       </div>
+   <!--    MOBILE FOOTER    -->
+       <div class="mobile">
+           <div class="mobile-section-1">
+               <i class="fas fa-angle-up Up"></i>
+               <label > BACK TO TOP</label>
+           </div>
+           <div class="mobile-section-2">
+               <label for="">SIGN UP AND GET <span> 15% OFF. &nbsp; </span></label>
+               <div id="newsletter">
+                   <div><input placeholder="YOUR EMAIL ADDRESS">
+                   </div>
+                   <div><button> > </button></div>
+               </div>
+           </div>
+           <div class="mobile-section-3">
+           <div id="login"><div><i class="fas fa-user"></i>&nbsp; &nbsp;Login</div></div> 
+           <div id="bag"><i class="fas fa-shopping-cart"></i>&nbsp; &nbsp;Your bag(0) </div>       
+           <div id="createAccount">Create Account</div>
+           <div id="contactUs" >Contact Us</div>
+           <div id="shipping" >Free Shipping + Free 30-Day Returns* <br>
+               The Official Reebok Store Call us between 8AM to 8PM 1-800-120-4400</div>
+           <div id="desktop"><div> View Desktop virsion</div></div>
+           <div id="loginStore" >Login to store</div>
+           <div id="policy"><div> Privacy Policy &amp; Terms of </div></div>
+           <div id="TNC" >Terms &amp; Conditions</div>
+           <div id="copyright" >©2021 m.shop4reebok.com <br>
+               Powered By : adi Sports (India) Pvt. Ltd.
+           </div>
+       </div>
+   </div>
+       </div>
    
-</script>
-    
-    <script src="JS/Header.js"></script>
-    <script src="JS/product.js"></script>
+</body>
+
+</html>
+
+ <script src="JS/header.js"></script>
+ <script src="JS/delivery.js"></script>

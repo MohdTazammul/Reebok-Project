@@ -1,214 +1,391 @@
-    
-/*      CSS - PC LAYOUT OF FOOTER    */
-        
-        .original-footer  .footer-section-1 {
-            font-family: Arial;
-            background-color: #2F2F2B;
-            display: flex;
-            justify-content: center;
-        }
-
-      .original-footer  .footer-section-1>div {
-            padding: 20px 30px;
-            font-size: .9em;
-            color: white;
-        }
-
-      .original-footer  .footer-section-1>div:nth-child(2) {
-            box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.5), -12px 0 8px -4px rgba(0, 0, 0, 0.5);
-        }
-
-        .original-footer .footer-section-2 {
-            color: white;
-            font-family: Arial;
-            background-color: #343530;
-            height: auto;
-            width: 100%;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            font-size: .9em;
-            padding-bottom: 30px;
-        }
-
-      .original-footer  footer ul {
-            list-style: none;
-            display: block;
-            float: left;
-            line-height: 1.7;
-            margin-left: 80px;
-            
-        }
-
-     .original-footer   footer h3 {
-            font-weight: 100;
-            margin-bottom: 0;
-        }
-     .original-footer   .tag
-        {
-            padding-top: 15px;
-            color: #828280;
-            font-size:18px;
-            font-weight: 600;
-        }
-      .original-footer  .footer-section-2 > ul:nth-child(1) {
-            margin-left: 0;
-        }
-      .original-footer  .footer-section-3 {
-            background-color: #40403a;
-            font-size: 28px;
-            color: white;
-            font-weight: bold;
-            text-align: center;
-            padding: 30px 0px;
-            font-family: Arial, Helvetica, sans-serif;
-        }        
-      .original-footer  .footer-section-3 label span {
-            font-weight: bold;
-            color: #cc0526;
-        }
-      .original-footer  .footer-section-3 button {
-            background-color:#c71432;
-            color: white;
-            padding: 10px;
-            font-size: 14px;
-            font-weight: 500;
-            border: none;
-            border-radius: 5px;
-        }
-     .original-footer   .footer-section-3 button:hover{
-            background-color: #f42043;
-            cursor: pointer;
-        }
-     .original-footer   .footer-section-4 {
-           display: flex;
-           justify-content: center;
-           padding: 30px;
-           background-color: #343530;
-        }
-     .original-footer   .footer-section-5 {
-            background-color: #343530;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 50px 0px 20px 0px;
-            color: #8d9495;
-            font-size: 13px;
-            letter-spacing: 1.5px;
-            display: flex;
-            justify-content: center;
-        }
-      .original-footer  .footer-section-5 img{
-            vertical-align: middle;
-        }
-      .original-footer  .mobile {
-            display: none;
-        }
-        
 /*     (closed) CSS - PC LAYOUT OF FOOTER    */
-        
-        @media screen and (min-width: 0px) and (max-width: 1000px) 
-        {
-            
-/*        RESPONSIVE CSS OF FOOTER    */
-            
-            
-        .original-footer     .main {
-                display: none;
-            }
-         .original-footer   .mobile {
-                display: block;
-            }
-         .original-footer   .mobile-section-1{
-                text-align: center;
-                padding: 30px;
-                font-weight: 500;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-          .original-footer  .Up {
-                font-size: 30px;                
-            }
-         .original-footer   .mobile-section-2 label span {
-            font-weight: bold;
-            color: #cc0526;
-                line-height: 3;
-           }
-         .original-footer  .mobile-section-2{
-               font-size: 25px;
-               font-family: Arial, Helvetica, sans-serif;
-               text-align: center;
-               font-weight: 600;
-               background-color: #1a1a16;
-               color: white;
-               padding: 20px;
 
-           }
-           
-          
-        .original-footer    #newsletter
-            {
-                display: flex;
-                width: 95%;
-                margin: auto;
-            }
-            
-         .original-footer   #newsletter > div:nth-child(1)
-            {
-                width: 95%;
-            }
-          .original-footer  #newsletter > div:nth-child(2)
-            {
-                width: 5%;
-                height: auto;
-                background-color: black;
-                color: white;
-            }
-            
-         .original-footer   #newsletter input
-            {
-                padding-left: 20px;
-                width: 100%;
-            }
-            
-            
-        .original-footer   #login {grid-area: c1;}
-        .original-footer   #bag {grid-area: c2;}         
-        .original-footer   #createAccount {grid-area: c3;}
-        .original-footer   #contactUs {grid-area: c4;}
-        .original-footer   #shipping {grid-area: c5;}
-        .original-footer   #desktop {grid-area: c6;}
-        .original-footer   #loginStore {grid-area: c7;}
-        .original-footer   #policy {grid-area: c8;}
-        .original-footer   #TNC {grid-area: c9;}
-        .original-footer   #copyright {grid-area: c10;}
-        .original-footer   .mobile-section-3 {
-               display: grid;
-               grid-template-areas: "c1 c2"
-               "c3 c4"
-               "c5 c5"
-               "c6 c7"
-               "c8 c9"
-               "c10 c10";
-               font-family: Arial, Helvetica, sans-serif;
-               text-align: center;                        
-           }
-        .original-footer   .mobile-section-3 > div{
-               padding: 12px;
-               background-color: #2f2f2b;
-               color: #fef9f2;
-               font-weight: 500;
-               line-height: 2.4;
-               font-size: 15px;
-               border-bottom: 1px solid #fef9f2;
-           }
-        .original-footer   #copyright{
-               font-size: 12px;
-           }
-           
-        .original-footer   #login div, .original-footer #desktop div, .original-footer #policy div {
-               width: 100%;
-               border-right:2px solid #fef9f2;
-           }
-            
-            
-        }
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+  /*        NAV BAR    */
 
+  .PC-navbar {
+    display: none;
+  }
+
+  .mobile-navbar {
+    display: block;
+  }
+
+  /*          HAMBURGER MENU CSS    */
+
+  .mobile-navbar .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .mobile-navbar .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .mobile-navbar .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .mobile-navbar #main {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    box-sizing: border-box;
+    transition: margin-left 0.5s;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: black;
+    color: darkgrey;
+  }
+
+  .mobile-navbar #main img {
+    margin-top: 10px;
+  }
+  .mobile-navbar #main > div:nth-child(2),
+  .mobile-navbar #main > div:nth-child(3) {
+    margin-top: 5px;
+  }
+
+  .mobile-navbar #main i {
+    box-sizing: border-box;
+    padding: 0px 10px;
+  }
+
+  .mobile-navbar .badge:after {
+    content: attr(value);
+    font-size: 10px;
+    font-weight: bold;
+    background: white;
+    color: black;
+    border-radius: 45%;
+    padding: 1px 7px;
+    position: relative;
+    left: -10px;
+    top: -18px;
+    opacity: 0.9;
+    border: 2px solid #cc3d55;
+    height: 40px;
+    width: 20%;
+  }
+
+  /*       Colapsible menu    */
+  .mobile-navbar .accordion {
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  .mobile-navbar .active,
+  .mobile-navbar .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .mobile-navbar .accordion:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .mobile-navbar .active:after {
+    content: '\2212';
+  }
+
+  .mobile-navbar .panel {
+    background-color: white;
+    max-height: 0;
+    color: black;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .mobile-navbar .panel a {
+    color: black;
+    border-bottom: 1px solid grey;
+  }
+
+  .mobile-navbar .accordion2 {
+    background-color: #eee;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  .mobile-navbar .active2,
+  .mobile-navbar .accordion2:hover {
+    background-color: #ccc;
+  }
+
+  .mobile-navbar .accordion2:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .mobile-navbar .active2:after {
+    content: '\2212';
+  }
+
+  .mobile-navbar .panel2 {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    color: black;
+    transition: max-height 0.2s ease-out;
+  }
+}
+
+/* *******************footer********************** */
+
+/*      CSS - PC LAYOUT OF FOOTER    */
+
+.original-footer .footer-section-1 {
+  font-family: Arial;
+  background-color: #2f2f2b;
+  display: flex;
+  justify-content: center;
+}
+
+.original-footer .footer-section-1 > div {
+  padding: 20px 30px;
+  font-size: 0.9em;
+  color: white;
+}
+
+.original-footer .footer-section-1 > div:nth-child(2) {
+  box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.5),
+    -12px 0 8px -4px rgba(0, 0, 0, 0.5);
+}
+
+.original-footer .footer-section-2 {
+  color: white;
+  font-family: Arial;
+  background-color: #343530;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9em;
+  padding-bottom: 30px;
+}
+
+.original-footer footer ul {
+  list-style: none;
+  display: block;
+  float: left;
+  line-height: 1.7;
+  margin-left: 80px;
+}
+
+.original-footer footer h3 {
+  font-weight: 100;
+  margin-bottom: 0;
+}
+.original-footer .tag {
+  padding-top: 15px;
+  color: #828280;
+  font-size: 18px;
+  font-weight: 600;
+}
+.original-footer .footer-section-2 > ul:nth-child(1) {
+  margin-left: 0;
+}
+.original-footer .footer-section-3 {
+  background-color: #40403a;
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.original-footer .footer-section-3 label span {
+  font-weight: bold;
+  color: #cc0526;
+}
+.original-footer .footer-section-3 button {
+  background-color: #c71432;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+}
+.original-footer .footer-section-3 button:hover {
+  background-color: #f42043;
+  cursor: pointer;
+}
+.original-footer .footer-section-4 {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background-color: #343530;
+}
+.original-footer .footer-section-5 {
+  background-color: #343530;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px 0px 20px 0px;
+  color: #8d9495;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: center;
+}
+.original-footer .footer-section-5 img {
+  vertical-align: middle;
+}
+.original-footer .mobile {
+  display: none;
+}
+
+/*     (closed) CSS - PC LAYOUT OF FOOTER    */
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+  /*        RESPONSIVE CSS OF FOOTER    */
+
+  .original-footer .main {
+    display: none;
+  }
+  .original-footer .mobile {
+    display: block;
+  }
+  .original-footer .mobile-section-1 {
+    text-align: center;
+    padding: 30px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .original-footer .Up {
+    font-size: 30px;
+  }
+  .original-footer .mobile-section-2 label span {
+    font-weight: bold;
+    color: #cc0526;
+    line-height: 3;
+  }
+  .original-footer .mobile-section-2 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 600;
+    background-color: #1a1a16;
+    color: white;
+    padding: 20px;
+  }
+
+  .original-footer #newsletter {
+    display: flex;
+    width: 95%;
+    margin: auto;
+  }
+
+  .original-footer #newsletter > div:nth-child(1) {
+    width: 95%;
+  }
+  .original-footer #newsletter > div:nth-child(2) {
+    width: 5%;
+    height: auto;
+    background-color: black;
+    color: white;
+  }
+
+  .original-footer #newsletter input {
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  .original-footer #login {
+    grid-area: c1;
+  }
+  .original-footer #bag {
+    grid-area: c2;
+  }
+  .original-footer #createAccount {
+    grid-area: c3;
+  }
+  .original-footer #contactUs {
+    grid-area: c4;
+  }
+  .original-footer #shipping {
+    grid-area: c5;
+  }
+  .original-footer #desktop {
+    grid-area: c6;
+  }
+  .original-footer #loginStore {
+    grid-area: c7;
+  }
+  .original-footer #policy {
+    grid-area: c8;
+  }
+  .original-footer #TNC {
+    grid-area: c9;
+  }
+  .original-footer #copyright {
+    grid-area: c10;
+  }
+  .original-footer .mobile-section-3 {
+    display: grid;
+    grid-template-areas:
+      'c1 c2'
+      'c3 c4'
+      'c5 c5'
+      'c6 c7'
+      'c8 c9'
+      'c10 c10';
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  .original-footer .mobile-section-3 > div {
+    padding: 12px;
+    background-color: #2f2f2b;
+    color: #fef9f2;
+    font-weight: 500;
+    line-height: 2.4;
+    font-size: 15px;
+    border-bottom: 1px solid #fef9f2;
+  }
+  .original-footer #copyright {
+    font-size: 12px;
+  }
+
+  .original-footer #login div,
+  .original-footer #desktop div,
+  .original-footer #policy div {
+    width: 100%;
+    border-right: 2px solid #fef9f2;
+  }
+}

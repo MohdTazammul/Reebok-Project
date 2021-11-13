@@ -221,9 +221,9 @@
 
  .Product-Page .filter-container .content {
      padding: 0px 10px;
-     max-height: 0;
+/*     max-height: 0;*/
      overflow: hidden;
-     transition: max-height 0.2s ease-out;
+     transition: max-height 0.2s ease-in-out;
      background-color: #f6f6f6;
      font-size: 14px;
      letter-spacing: 1px;
@@ -313,13 +313,25 @@
 }
 .card1
 {
-    
+    height: 430px;
   transition: ease-in-out 0.3s;
 }
  .Product-Page .right-products .card1:hover
 {
     border-radius: 10px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.Product-Page .right-products .card1 .hover-product-imgs, .Product-Page .right-products .card1 > div:nth-last-child(1)
+{
+    visibility: hidden !important;
+}
+
+
+ .Product-Page .right-products .card1:hover .hover-product-imgs, .Product-Page .right-products .card1:hover > div:nth-last-child(1)
+{
+    visibility: visible !important;
+    display: block !important;
 }
 
  .Product-Page .right-products .card1 > div:nth-child(1)
@@ -389,10 +401,11 @@
 }
 .Product-Page .right-products .card1 .hover-product-imgs>div:nth-last-child(1)
 {
-    padding-top: 8px;
+    margin-top: -37px;
     border: none;
     position: absolute;
     right: 0;
+    
 }
 
 .Product-Page .right-products .card1 >div:nth-last-child(1)

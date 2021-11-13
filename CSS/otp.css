@@ -1,0 +1,36 @@
+div {
+  width: 30%;
+  margin: auto;
+  margin-top: 150px;
+  background-color: rgb(248, 237, 237);
+  font-size: 13px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 30px;
+  line-height: 1.5;
+  font-family: Arial;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+input {
+  height: 35px;
+  width: 300px;
+  padding-left: 10px;
+}
+button {
+  height: 30px;
+  width: 100px;
+  margin-top: 30px;
+  margin-left: 15px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+#goBack {
+  background-color: rgb(58, 57, 57);
+}
+div p {
+  font-style: italic;
+  color: grey;
+  font-size: 14px;
+}

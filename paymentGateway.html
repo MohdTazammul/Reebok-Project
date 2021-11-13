@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/2b85c82466.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="/CSS/paymentGateway.css">
+   <title>Payment Gateway</title>
+   
+</head>
+<body>
+   <div class="paymentGateway-page">
+      <div class="paymentGateway-div-1">
+         <div>
+            <div>
+            <img src="https://api.payu.in/public/assets/images/back.svg" alt="">&nbsp;&nbsp;&nbsp; Back
+            </div>
+            <div>
+           <img src="/img/reebok.jpg" alt="">
+         </div>
+         </div>
+         <div><h2>Enter new card</h2></div>
+         <div>Total Payable Amount₹19912</div>
+         <div>Transaction Id: 61557332234</div>
+         <div>Get Flat INR 1500 Cashback only on EMI transactions with American Express Credit Cards between 15 Oct- 30 Nov, 2021. Valid on min spend of INR 30000.T&C Apply*</div>
+      </div>
+      <div class="paymentGateway-div-2">
+         <div><h4>&nbsp;&nbsp;&nbsp; NEW CARD</h4></div>
+         <div class="paymentGateway-div-3">
+            <div>
+            
+
+            <label for="">NEW CARD</label>
+            <input id="cardNumber" type="tel" placeholder="Enter Card Number">
+            <span>Card No. is required</span>            
+            <div>
+            <div>
+            <label for="">Expiry</label>
+            <input id="cardExpiry" type="tel" placeholder="MM/YY" style="width: 20%;">
+            <span>Expiry is required</span>
+           </div>
+           <div>
+            <label for="">CVV <img src="	https://api.payu.in/public/assets/images/cvv-more-info.svg" alt=""></label>
+            <input id="cardCV" type="password" placeholder="Enter CVV" style="width: 20%;">
+            <span>CVV is required</span>
+           </div>
+           </div>
+            <label for="">Name on card </label>
+            <input id="cardName" type="text" placeholder="Enter name as on card">
+            <div class="CB">
+            <input type="checkbox" name="" id="" checked disabled>
+            <label class="checkB" for="">Save this option securely for faster payment</label>
+         </div>
+            <button onclick="validatePayment()" id="proceed">PROCEED</button>
+        
+         </div>
+      </div>      
+      </div>
+   </div>
+   
+   <div class="paymentGateway-pageBottom">
+      <div><img width="100%" src="/img/paymentLogoImages.JPG" alt=""></div>
+      <div>By proceeding, you understand that your information will be processed as per PayU’s Privacy Policy</div>
+   </div>
+</body>
+</html>
+<script src="JS/paymentGateway.js"></script>

@@ -1,0 +1,332 @@
+  .individualProduct .individualProduct-tag {
+     padding: 20px;
+     text-align: center;
+     font-size: 11px;
+     color: #40403a;
+     letter-spacing: 2px;
+     font-weight: 500;
+     background-color: #fbfbfb;
+ }
+ .individualProduct .individualProduct-tag-1{
+     display: flex;
+     width: 100%;
+     padding-left: 8%;
+     padding-top: 10px;
+     height: 30px;
+     border-bottom: 1px solid #e5e5e5;
+ }
+ .individualProduct .individualProduct-tag-1 a{
+     display: flex;
+     width: 7%; 
+     padding-left: 10px; 
+     font-size: 13px;
+     border-right:1px dotted grey; 
+ }
+ .individualProduct .individualProduct-body {
+     display: flex;
+     width: 90%;
+     height: 590px;
+     margin: auto;
+     margin-bottom: 20px;
+     padding: 20px 0px 20px 0px;
+     /* border: 1px solid red; */
+     /* border-right:1px solid red; */
+ }
+ .individualProduct .individualProduct-body .individualProduct-bodyLeft{
+     width: 10%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+      border:1px solid grey; 
+     padding: 10px;
+ }
+ .individualProduct .individualProduct-bodyLeft img {
+     height: 100px;
+ }
+ .individualProduct .individualProduct-body .individualProduct-bodyMiddle{
+     width: 50%;
+    /* border:1px solid red; */
+
+ }
+ .individualProduct .individualProduct-body .individualProduct-Right {
+     width: 40%;
+    /* border:1px solid red; */
+ }
+ .individualProduct-Right {
+     font-size: 16px;
+ }
+ .individualProduct-Right div:nth-child(1) div {
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ .individualProduct-Right div:nth-child(1) div label:nth-child(1){
+     text-decoration: line-through;
+     margin-right: 30px;
+     font-weight: bold;
+     color: #99989c;
+ }
+ .individualProduct-Right div:nth-child(1) div button{
+     background-color: #c71432;
+     color: white;
+     font-weight: bold;
+     margin-left: 30px;
+     padding: 5px 8px 5px 8px;
+     font-size: 13px;
+ }
+ .individualProduct-Right div:nth-child(1)> label:nth-child(1){
+     font-size: 11px;
+     
+ }
+    .vertical-text-height 
+{
+     transform: scaleY(1.2);
+     transform-origin: 0 0;
+     display: inline-block;
+}
+ /* Product Name */
+ .individualProduct-Right div >label:nth-child(3) {
+     font-weight: 650; 
+     font-size: 17px;    
+    letter-spacing: 0;    
+    font-family: Arial;
+ }
+ .individualProduct-Right div:nth-child(1) >label:nth-child(5),.individualProduct-Right div:nth-child(1) >label:nth-child(7),.individualProduct-Right div:nth-child(1) >label:nth-child(9) {
+     font-size: 12px;
+     line-height: 0 !important;
+ }
+ .individualProduct-Right div:nth-child(1) >label:nth-child(9) {
+     color: #b4a39e;
+ }
+ .individualProduct-Right div div:nth-child(10) {
+     display: flex;
+     /* border: 1px solid blue; */
+ }
+ .individualProduct-Right div div:nth-child(10) img {
+     margin-right: 20px;
+     padding-top: 10px;
+     height: 55px;
+ }
+ .individualProduct-Right .sizeDiv label:nth-child(1) {
+     font-size: 11px;
+     font-weight: 400;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     font-family: NeuePlakTextRegular;
+     color: green;
+     /* border: 1px solid blue; */
+ }
+ .individualProduct-Right .sizeDiv #size{
+    font-size: 11px !important;
+    font-weight: 400;
+ }
+ .individualProduct-Right #selectSize {
+     width: 50%;
+     /* border: 1px solid blue; */
+ }
+ .individualProduct-Right #selectSize select {
+     width: 100%;
+     height: 45px;
+     font-size: 13px;
+     margin-top: 10px;
+     font-weight: 700;
+    letter-spacing: 2px;    
+     padding-left: 10px;
+     border: 1px solid #b7b7b7;
+ }
+ .individualProduct-Right #selectSize button{
+     width: 100%;
+     margin-top: 20px;
+     text-align: left;
+     padding: 0px 10px;
+     color: white;
+     padding-bottom: 10px;
+     font-weight: bold;
+     background-color: #ab2328;
+     transition: 0.1s ease-in-out;
+     /* border: 1px solid red; */
+ }
+    .individualProduct-Right #selectSize button:hover
+    {
+        background-color: maroon;
+    }
+     .individualProduct-Right #selectSize button:hover label
+    {
+        padding-left: 120px;
+    }
+ .individualProduct-Right #selectSize button label {
+     padding-left: 110px;
+     font-size: 30px;
+     
+ }
+ .individualProduct-Right #selectSize label a {
+     font-size: 11px;
+     color: #ad3d4c;
+ }
+ .individualProduct-Right #selectSize #socialMeadiaIcons {
+     display: flex;
+     margin-top: 20px;
+     height: 40px;
+     /* border: 1px solid blue; */
+ }
+ .individualProduct-Right #selectSize #socialMeadiaIcons i {
+     margin-right: 25px;
+     font-size: 15px;
+     width: 80%;
+     padding: 10px;
+     padding-right: 3px;
+     border: 1px solid rgb(56, 56, 56);
+ }
+ /* DESCRIPTION PART */
+
+ .individualProduct-description {
+     width: 90%;
+     height: 400px;     
+     margin: auto;
+     margin-bottom: 40px;    
+     /* border: 1px solid blue; */
+ }
+ .individualProduct-description > div:nth-child(1){
+     height: 50px;
+     padding-top: 22px;
+     padding-left: 25px;
+     font-size: 20px;
+     font-weight: bold;
+     letter-spacing:1;
+     /* border: 1px solid red; */
+ }
+ .individualProduct-description > div:nth-child(2) div {
+     width: 100%;    
+ }
+ .individualProduct-description > div:nth-child(2){
+     display: flex;
+     line-height: 2;
+     padding: 0px 20px 0px 20px;
+     /* border: 1px solid black; */
+ }
+ .individualProduct-description > div:nth-child(2) div> button{
+     width: 100%;
+     color: #0f1216;
+     font-weight: bold;
+     font-size: 13px;
+     text-align: center;
+     padding: 5px;
+     border: 1px solid grey;
+     /* border: 1px solid red; */
+ }
+ .individualProduct-description > div:nth-child(2) div:nth-child(1)> button:nth-child(1){
+     border: 1px solid #ab2328;
+     border-bottom: 3px solid #ab2328;
+     border-right: 2px solid #ab2328;
+ }
+ .individualProduct-description > div:nth-child(2) div> ul{
+     width: 100%;
+     height: 300px;
+     font-size: 13px;
+     color: #394961;
+     padding: 40px 40px 0px 20px;     
+     /* border: 1px solid red; */
+ }
+
+    .individualProduct-bodyLeft i
+    {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        margin-left: 40%;
+    }
+    .individualProduct-bodyLeft i:hover
+    {
+        background-color: white;
+        border: 1px solid black;
+        cursor: pointer;
+        color: black;
+    }
+
+    
+/*  ZOOOM  */
+    
+ #img-zoomer-box {
+  width: 500px;
+  height: auto;
+  position: relative;
+  margin-top: 10px;
+     margin-left: 70px;
+}
+
+#img-1 {
+  width: 100%;
+  height: auto;
+}
+
+#img-zoomer-box:hover, #img-zoomer-box:active {
+  cursor: crosshair;
+  display: block;
+}
+
+#img-zoomer-box:hover #img-2, #img-zoomer-box:active #img-2 {
+  opacity: 1;
+}
+#img-2 {
+  width: 150px !important;
+  height: 150px !important;
+    background: no-repeat #FFF;
+  background-image: url('https://content.shop4reebok.com/static/Product-FW1936/MEN_RUNNING_SHOES_FW1936_1.jpg') ;
+    transform: scale(2.5);
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  z-index: 99;
+  display: block;
+  transition: opacity .2s;
+}
+    
+#salePrice
+{
+    font-weight: bold;
+}
+    .right-tick
+    {
+        position: absolute;
+        margin-top: -50px;
+        margin-left: 40px;
+    }
+
+    
+.tablink {
+	border : 2px solid black;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 50%;
+    font-weight: bold;
+}
+
+.tablink:hover {
+  background-color: #777;
+    color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 100px 700px 50px 50px;
+    font-size: 14px;
+    line-height: 2;
+  text-align: left;
+}
+
+#Desc, #Specs 
+ {background-color:whitesmoke;}
+    
+    .select-size
+    {
+        background-color: #fe0000;
+        font-size: 20px;
+        color: white;
+        padding: 10px 10px;
+        display: none;
+    }

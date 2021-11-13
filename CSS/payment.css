@@ -1,0 +1,179 @@
+.payment-Page {
+  width: 80%;
+  margin: auto;
+  font-family: NeuePlakTextRegular !important;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.payment-Page .topCurrentBar {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  /* border: 1px solid red;    */
+}
+.payment-Page input[type='radio'] {
+  display: inline-block;
+  margin-right: 15px;
+}
+.payment-Page .step {
+  background: grey;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em;
+}
+.payment-Page .topCurrentBar > div {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  background-color: #e2e2e2;
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+  border-right: 1px solid rgb(161, 158, 158);
+  /* border: 1px solid red;             */
+}
+.payment-Page .topCurrentBar > div > h2 {
+  padding-left: 5px;
+}
+.payment-Page .topCurrentBar > div:nth-child(3) {
+  background-color: #f6f6f6 !important;
+}
+.payment-Page .paymentHeading {
+  width: 100%;
+  height: 60px;
+  font-size: 22px !important;
+  color: black;
+  padding-top: 10px;
+  font-weight: 600;
+  /* border: 1px solid red; */
+}
+.payment-Page .paymentMainDivs {
+  display: flex;
+  /* border: 1px solid red; */
+}
+.payment-Page .paymentMainDivs > div:nth-child(1) {
+  width: 20%;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  border-right: 2px solid grey;
+}
+
+.payment-Page .paymentMainDivs > div:nth-child(1) > button {
+  width: 100%;
+  height: 50px;
+  text-align: left;
+  border: none;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  background-color: #e2e2e2;
+  border-bottom: 1px solid white;
+  /* border: 1px solid red;      */
+}
+.payment-Page .paymentMainDivs > div:nth-child(1) > button:hover {
+  background-color: white;
+}
+.payment-Page .paymentMainDivs .PaymentOptions .btn1 {
+  background-color: white;
+}
+.payment-Page .paymentMainDivs .PaymentOptions .btn1:hover {
+  background-color: #e2e2e2;
+}
+
+.payment-Page .paymentMainDivs > div:nth-child(2) {
+  width: 50%;
+  padding: 10px;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+}
+.payment-Page .paymentMethod-select {
+  display: flex;
+  width: 80%;
+}
+.payment-Page .paymentMethod-select > div {
+  display: flex;
+}
+.payment-Page .paymentMethod-select > div:nth-child(1),
+.payment-Page .paymentMethod-select > div:nth-child(2) {
+  width: 100%;
+  padding: 30px;
+  align-items: center;
+}
+.payment-Page .paymentMethod-select > div:nth-child(1) > img,
+.payment-Page .paymentMethod-select > div:nth-child(2) > img {
+  width: 60%;
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.payment-Page .paymentMethod > label > img {
+  width: 80%;
+  height: 100px;
+  padding: 10px;
+  /* border: 1px solid red; */
+}
+.payment-Page .paymentProceed {
+  display: flex;
+  width: 80%;
+  padding: 20px;
+  font-weight: bold;
+  /* border: 1px solid red; */
+}
+.payment-Page .paymentProceed > button:nth-child(1) {
+  width: 30%;
+  padding: 10px;
+  margin-right: 25px;
+  margin-left: 20px;
+  background-color: #969696;
+  color: white;
+  /* border: 1px solid red; */
+}
+.payment-Page .paymentProceed > button:nth-child(2) {
+  width: 40%;
+  border: none;
+  margin-left: 10px;
+  background-color: #0064d3;
+  color: white;
+}
+.payment-Page .paymentNote {
+  width: 95%;
+  text-align: left;
+  font-size: 15px;
+  padding-left: 20px;
+  margin-top: 40px;
+}
+.payment-Page .paymentMainDivs > div:nth-child(3) {
+  width: 30%;
+  height: 400px;
+  font-weight: bold;
+}
+
+.payment-Page .orderSummary > div {
+  width: 70%;
+  height: 150px;
+  margin-left: 30%;
+  padding: 10px;
+  line-height: 2;
+  background-color: #e2e2e2;
+}
+.payment-Page .orderSummary > div:nth-child(1) {
+  border-top: 3px solid black;
+}
+.payment-Page .orderSummary > div:nth-child(2) {
+  border-top: 3px solid black;
+  margin-top: 10%;
+}
+.payment-Page .orderSummary > div:nth-child(1) > h3,
+.payment-Page .orderSummary > div:nth-child(2) > h3 {
+  margin-top: -18%;
+}

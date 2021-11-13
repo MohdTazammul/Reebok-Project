@@ -1,0 +1,253 @@
+
+
+/* CSS FOR CHECKOUT PAGE */
+
+#checkoutMainDiv{
+width: 90%;
+margin: auto;
+margin-top: 25px;
+}
+
+#checkoutHeading{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-size: 15px;
+}
+.checkoutHead_active{
+  /* border: 1px solid black; */
+  /* width: 98%; */
+  /* padding-left: 10px; */
+  background-color: #F6F6F6;
+  padding: 10px;
+}
+.checkoutHead_inactive{
+  /* border: 1px solid black; */
+  /* width: 98%; */
+  /* padding-left: 10px; */
+  background-color: #E2E2E2;
+  padding: 10px;
+  
+}
+
+.checkoutHead_active>span{
+  background-color: #C71432;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 50%;
+  
+  
+  color: white;
+}
+.checkoutHead_inactive>span{
+  padding-left: 6px;
+ padding-right: 6px;
+ border-radius: 50%;
+ background-color: rgb(179,179,179);
+ color: white;
+}
+
+#checkoutMainDiv #shopingCartDiv
+{
+    margin-top: 30px;
+}
+
+#checkoutMainDiv #shopingCartDiv .title
+{
+    font-family: 'Arimo', sans-serif;
+     letter-spacing: 1px;
+     font-size: 22px;
+     letter-spacing: -2px;
+     display: inline-block;
+     transform: scaleX(1.3); 
+    transform-origin: 0 0;
+     font-weight: 500;
+}
+#checkoutMainDiv .cartSections
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#checkoutMainDiv  .cartSections > div
+{
+/*    border: 1px solid red;*/
+}
+
+#checkoutMainDiv  .cartSections > div:nth-child(1)
+{
+    width: 75%;
+}
+#checkoutMainDiv  .cartSections > div:nth-child(2)
+{
+    width: 20%;
+}
+
+#checkoutMainDiv  .cartSections .left-section > label:nth-child(1)
+{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#checkoutMainDiv  .cartSections .left-section .ships
+{
+    color:#0066cb;
+    margin-top: 15px;
+    font-size: 12px;
+}
+#checkoutMainDiv  .cartSections .left-section .product-section
+{
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 12% 43% 22% 23%;
+}
+#checkoutMainDiv  .cartSections .left-section .product-section > div 
+{
+/*    border: 1px solid blue;*/
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#checkoutMainDiv  .cartSections .left-section .product-section #title
+{
+    color: #666666;
+    font-weight: bold;
+}
+
+.vertical-text-height 
+{
+     transform: scaleY(1.2);
+     transform-origin: 0 0;
+     display: inline-block;
+}
+#checkoutMainDiv  .cartSections .left-section .product-section > div:nth-child(2)
+{
+    padding-left: 10px;
+    line-height: 1.7;
+}
+#checkoutMainDiv  .cartSections .left-section .product-section button
+{
+    margin-top: 30px;
+    color: #666666;
+    font-weight: bold;
+}
+#checkoutMainDiv  .cartSections .left-section .product-section button:hover
+{
+    color: #0066cb;
+    text-decoration: underline;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#checkoutMainDiv  .cartSections .left-section .product-section > div:nth-child(3) > input
+{
+    border: 2px solid black;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+}
+
+#checkoutMainDiv  .cartSections .left-section .product-section > div:nth-child(4) > button
+{
+    margin-top: 0px;
+    color: black;
+    background-color: whitesmoke;
+    border: 3px solid dimgrey;
+    padding: 3px 20px;
+}
+
+#checkoutMainDiv  .cartSections .left-section .product-section > div:nth-child(4) > label
+{
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+#checkoutMainDiv  .cartSections .oldPrice
+{
+    color: dimgrey !important;
+    text-decoration: line-through !important;
+    margin-left: 90px;
+}
+#checkoutMainDiv  .cartSections .order-summary
+{
+    width: 100%;
+    background-color: #ededed;
+    height: 200px;
+    border-top: 3px solid black;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45% 20% 25% 10%;
+    font-size: 12px;
+    color: dimgrey;
+    font-weight: bold;
+}
+
+#checkoutMainDiv  .cartSections .order-summary #incl
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: right;
+}
+#checkoutMainDiv  .cartSections .order-summary > .amt
+{
+    color: black;
+    text-align: right;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+#checkoutMainDiv  .cartSections .order-summary > div:nth-child(3),
+#checkoutMainDiv  .cartSections .order-summary > div:nth-child(4)
+{
+    border-bottom: 1px solid black;
+}
+
+
+#checkoutMainDiv  .cartSections .order-summary > .total
+{
+    color: black;
+    padding-top: 10px;
+    font-size: 18px;
+}
+#checkoutMainDiv  .cartSections .order-summary >  .total-amt > label:nth-child(1)
+{
+    color: black;
+    font-size: 20px;
+    text-align: right;
+    padding-top: 10px;
+    float: right;
+}
+
+#checkoutMainDiv  .cartSections .right-section > button, #checkoutMainDiv > button
+{
+    margin-top: 20px;
+    background-color: #c71432;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+}
+
+#checkoutMainDiv  .cartSections .right-section > button:hover, #checkoutMainDiv > button:hover
+{
+    background-color: maroon;
+}
+#checkoutMainDiv > button
+{
+    width: 30% !important;
+}
+
+#checkoutMainDiv #noProducts
+{
+    font-size: 30px !important;
+    color: red;
+    margin-bottom: -100px;
+}
