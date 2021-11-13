@@ -239,7 +239,7 @@ let zoomer = function (){
                        
                 cart.push(obj);
                 localStorage.setItem("ReebokCartList", JSON.stringify(cart));
-                        
+                        window.location.href = "./cart.html"; 
                    }
                    else
                    {
