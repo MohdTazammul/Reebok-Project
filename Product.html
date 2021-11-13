@@ -1051,13 +1051,15 @@
                 var cardDiv = document.createElement("div");
                 cardDiv.setAttribute("class","card1");
                
-                cardDiv.addEventListener("click", redirectToIndividualPage);
 //            cardDiv.setAttribute("onclick","redirectToIndividualPage()")
             
                 var subDiv1 = document.createElement("div");
                 
                 var img1 = document.createElement("img");
                 img1.setAttribute("src",item.imgUrl[0]);
+                
+                
+                img1.addEventListener("click", redirectToIndividualPage);
             
                 var label1 = document.createElement("label");
                 label1.setAttribute("class","discount-tag");
@@ -1107,6 +1109,8 @@
             label2.setAttribute("class", "product-title vertical-text-height");
             label2.textContent = item.title;
             
+            
+            
                 var br1 = document.createElement("br");
 
                 var label3 = document.createElement("label");
@@ -1121,6 +1125,8 @@
             subDiv2.append(label2, br1, label3, label4);
             
             
+                subDiv2.addEventListener("click", redirectToIndividualPage2);
+            
                 var subDiv3 = document.createElement("div");
                 
                 var label5 = document.createElement("label");
@@ -1131,7 +1137,9 @@
                     {
                          var spanTag = document.createElement("span");
                         spanTag.textContent = item.size[i];
+                        spanTag.addEventListener("click",sizeToggle);
                         subDiv3.append(spanTag);
+                        
                     }
             
             var btn3 = document.createElement("button");
@@ -1154,20 +1162,77 @@
         });
     }
     
+    var finalSize = null;
+    
+    function sizeToggle(e)
+    {
+        if(e.target.style.backgroundColor != "maroon")
+            {
+//                console.log(e.target.textContent);
+                finalSize = e.target.textContent;
+                
+//                console.log(e.target.parentElement.getElementsByTagName("span"))
+                var ln  = e.target.parentElement.getElementsByTagName("span");
+                for(var i=0; i<ln.length; i++)
+                    {
+                        
+                ln[i].style.backgroundColor = "white";
+                ln[i].style.color = "black";
+                    }
+                e.target.style.backgroundColor = "maroon";
+                e.target.style.color = "white";
+               
+                
+            }
+        else
+            {
+                finalSize = null;
+                e.target.style.backgroundColor = "white";
+                e.target.style.color = "black";
+            }
+//        console.log(finalSize);
+//        console.log(e.target);
+    }
+    
     // add to cart script
     var cart = JSON.parse(localStorage.getItem("ReebokCartList")) || [];
     
     function addToCart(e)
     {
-        console.log(e.target.parentElement.lastChild.textContent);
+        if(finalSize != null)
+          {  
+        
+//        console.log(e.target.parentElement.parentElement);
+        var imgsrc2 = (e.target.parentElement.parentElement.firstChild.firstChild.src);
+        console.log(imgsrc2);
+        
+        
+        
         var cardProductid = e.target.parentElement.lastChild.textContent;
+        
+        var finalColor = "";
+        
+        for(var i=0; i<data.length; i++)
+            {
+                if(data[i].id == cardProductid)
+                    {
+//                        console.log(data[i]);
+                        for(var j=0; j<data[i].imgUrl.length; j++)
+                            {
+                                if(data[i].imgUrl[j] == imgsrc2)
+                                    finalColor = data[i].color[j];
+                            }
+                    }
+            }
+        
+//        console.log(finalColor);
         // Now check whether the product already exsist in cart or not
         
         var flag = false;
         
         for(var i=0; i<cart.length; i++)
             {
-                if(cart[i] == cardProductid)
+                if(cart[i].id == cardProductid && cart[i].color == finalColor && cart[i].size == finalSize)
                     {
                         flag = true;
                         break;
@@ -1175,15 +1240,37 @@
             }
         if(!flag)
             {
-                cart.push(cardProductid);
+            var loggedUser  = JSON.parse(localStorage.getItem("LoggedInUser"));
+//                console.log(loggedUser);
+                if(loggedUser != null)
+                   {
+                var obj =
+                    {
+                        id : cardProductid,
+                        size : finalSize,
+                        color : finalColor, 
+                        user : loggedUser[0]
+                    }
+                       
+                cart.push(obj);
                 localStorage.setItem("ReebokCartList", JSON.stringify(cart));
+                        
+                   }
+                   else
+                   {
+                        alert("You need to login first to add items in your cart!!!");
+                   }
             }
         else
             {
                 // Selected product already exists in cart, therefore cant add it to cart.
                 alert("This Product is alredy in your cart....!!!");
             }
-
+          }
+        else
+            {
+                alert("please select a size to add product in cart");
+            }
     }
     
     // add to cart script
@@ -1286,14 +1373,23 @@
     
     function redirectToIndividualPage(e)
     {
-//        alert("clicked");
-//        console.log(e.target.parentElement.lastChild.textContent);
-        console.log(this.lastChild.lastChild.textContent);
-        var individualProductId = this.lastChild.lastChild.textContent;
+        var individualProductId = this.nextSibling.parentNode.parentElement.lastChild.lastChild.textContent;
         
         window.location.href = "indiProduct.html?"+individualProductId;
         
     }
+    
+    function redirectToIndividualPage2(e)
+    {
+        var individualProductId = this.nextSibling.parentNode.lastChild.lastChild.textContent;
+        
+        window.location.href = "indiProduct.html?"+individualProductId;
+    }
+    
+    
+    
+    
+    
     
 </script>
     
